@@ -51,7 +51,7 @@ public class Enregistreur {
 	}
 
 	/**
-	 * Met � jour la liste des commandes enregistrées
+	 * Met à jour la liste des commandes enregistrées
 	 * @param listeCommandes
 	 */
 	public void setListeCommandes(List<CommandeEnregistrable> listeCommandes) {

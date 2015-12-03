@@ -28,8 +28,8 @@ public class CopierEnregistrable extends Copier implements CommandeEnregistrable
 	}
 	
 	/**
-	 * Crée le memento
-	 * Enregistre la commande
+	 * Crée le memento <br>
+	 * Enregistre la commande <br>
 	 * Exécute la commande
 	 */
 	@Override

@@ -37,14 +37,10 @@ public class MoteurEdition implements MoteurEditionInterface
 	}
 	
 	/**
-	 * Retourne le contenu du buffer sous forme plus lisible
+	 * Retourne le contenu du buffer ainsi que la sélection 
+	 * sous forme plus lisible
 	 * @return String
 	 */
-	public String getContent(){
-		return this.buffer.getContenu().toString() + " (longueur : " + this.buffer.getContenu().toString().length() + ")";
-	}
-	
-	
 	public String getSelection() {
 		int debut = this.selection.getDebut();
 		int fin = this.selection.getLongueur() + debut + 1;
@@ -62,7 +58,6 @@ public class MoteurEdition implements MoteurEditionInterface
 		}
 		
 		return newText.toString() + " (longueur : " + this.buffer.getContenu().toString().length() + ")";
-		//return this.selection.getContenu();
 	}
 	
 	
@@ -75,8 +70,8 @@ public class MoteurEdition implements MoteurEditionInterface
 	}
 	
 	/**
-	 * Exécute la commande Saisir
-	 * Le texte saisi est mis dans le buffer en prenant en compte la sélection actuelle
+	 * Exécute la commande Saisir <br>
+	 * Le texte saisi est mis dans le buffer en prenant en compte la sélection actuelle <br>
 	 * La sélection est ensuite réinitalisée, et mise à la fin du contenu du buffer
 	 */
 	public void saisir(StringBuffer texte) {
@@ -109,9 +104,9 @@ public class MoteurEdition implements MoteurEditionInterface
 	}
 	
 	/**
-	 * Exécute la commande Coller
-	 * Le contenu du presse papier est coller dans le contenu fu buffer
-	 * en prenant en compte la sélection actuelle
+	 * Exécute la commande Coller <br>
+	 * Le contenu du presse papier est coller dans le contenu fu buffer <br>
+	 * en prenant en compte la sélection actuelle <br>
 	 * La sélection est ensuite mise à la suite du texte collé
 	 */
 	public void coller() {
@@ -128,7 +123,7 @@ public class MoteurEdition implements MoteurEditionInterface
 	}
 	
 	/**
-	 * Exécute la commande Selectionner
+	 * Exécute la commande Selectionner <br>
 	 * Met à jour le début, la longueur et le contenu de la sélection
 	 */
 	public void selectionner(int debut, int longueur) {	
@@ -145,9 +140,9 @@ public class MoteurEdition implements MoteurEditionInterface
 	}
 	
 	/**
-	 * Exécute la commande Couper
-	 * La sélection est mise dans le presse papier
-	 * La sélection est supprimée du contenu du buffer
+	 * Exécute la commande Couper <br>
+	 * La sélection est mise dans le presse papier <br>
+	 * La sélection est supprimée du contenu du buffer <br>
 	 * La sélection est réinitalisée
 	 */
 	public void couper() {

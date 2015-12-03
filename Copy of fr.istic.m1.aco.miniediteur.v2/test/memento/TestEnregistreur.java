@@ -21,7 +21,7 @@ public class TestEnregistreur extends TestCase {
 	/**
 	 * --- Demarrer ---
 	 */
-	// Test si le booléen est bien mis a true
+	// Test si le boolÃ©en est bien mis a true
 	public void testDemarrer() {
 		Enregistreur enregistreur = new Enregistreur();
 
@@ -30,7 +30,7 @@ public class TestEnregistreur extends TestCase {
 		assertTrue(enregistreur.isEnregistrement());
 	}
 
-	// Test si la liste de commande est bien réinitialiser
+	// Test si la liste de commande est bien rÃ©initialisÃ©e
 	public void testDemarrer2() {
 		Enregistreur enregistreur = new Enregistreur();
 		MoteurEdition moteurEdition = new MoteurEdition();
@@ -94,7 +94,7 @@ public class TestEnregistreur extends TestCase {
 		assertTrue(!enregistreur.isEnregistrement());
 	}
 
-	// Test si l'enregistrement est bien arreter et ne prends pas de commande en plus
+	// Test si l'enregistrement est bien arretÃ© et ne prend pas de commande en plus
 	public void testArreter2(){
 		Enregistreur enregistreur = new Enregistreur();
 
@@ -119,7 +119,7 @@ public class TestEnregistreur extends TestCase {
 		// Valeur a comparer
 		String texte = "Bonjour";
 		
-		// Démarre un enregistrement
+		// DÃ©marre un enregistrement
 		Enregistreur enregistreur = new Enregistreur();
 		enregistreur.setEnregistrement(true);
 		
@@ -127,7 +127,7 @@ public class TestEnregistreur extends TestCase {
 		MoteurEdition moteurEdition = new MoteurEdition();
 		moteurEdition.pressePapier.setContenu(texte);
 	
-		// Rajoute la commande coller à l'enregistreur
+		// Rajoute la commande coller Ã  l'enregistreur
 		CommandeEnregistrable collerEnregistrable = new CollerEnregistrable(moteurEdition, enregistreur);
 		List<CommandeEnregistrable> listeCommandes =  new ArrayList<CommandeEnregistrable>();
 		listeCommandes.add(collerEnregistrable);
@@ -136,7 +136,7 @@ public class TestEnregistreur extends TestCase {
 		// On arrete l'enregistrement
 		enregistreur.setEnregistrement(false);
 		
-		// Lance la commande à tester
+		// Lance la commande Ã  tester
 		enregistreur.rejouer();
 		assertEquals(texte, moteurEdition.buffer.getContenu().toString());
 	}
@@ -147,7 +147,7 @@ public class TestEnregistreur extends TestCase {
 		// Valeur a comparer
 		String texte = "Bonjour";
 		
-		// Démarre un enregistrement
+		// DÃ©marre un enregistrement
 		Enregistreur enregistreur = new Enregistreur();
 		enregistreur.setEnregistrement(true);
 		
@@ -156,7 +156,7 @@ public class TestEnregistreur extends TestCase {
 		moteurEdition.buffer.setContenu(new StringBuffer(texte));
 		IHMMemento ihmMemento = new IHMMemento();
 	
-		// Rajoute la commande coller à l'enregistreur
+		// Rajoute la commande coller Ã  l'enregistreur
 		// TODO Voir comment rajouter un texte au mementoSaisir
 		CommandeEnregistrable saisirEnregistrable = new SaisirEnregistrable(moteurEdition, ihmMemento, enregistreur);
 		List<CommandeEnregistrable> listeCommandes =  new ArrayList<CommandeEnregistrable>();
@@ -166,7 +166,7 @@ public class TestEnregistreur extends TestCase {
 		// On arrete l'enregistrement
 		enregistreur.setEnregistrement(false);
 		
-		// Lance la commande à tester
+		// Lance la commande Ã  tester
 		enregistreur.rejouer();
 		assertEquals(texte + texte, moteurEdition.buffer.getContenu().toString());
 	}

@@ -17,8 +17,6 @@ public  interface MoteurEditionInterface
 	
 	public void selectionner(int debut, int longueur) ;
 	
-	public String getContent();
-	
 	public String getSelection();
 }
 

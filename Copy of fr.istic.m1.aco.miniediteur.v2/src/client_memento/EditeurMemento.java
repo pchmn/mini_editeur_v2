@@ -9,6 +9,9 @@ import memento.Enregistreur;
 import receiver.*;
 
 /**
+ * Class EditeurMemento <br>
+ * C'est le main de la version 2 <br>
+ * Elle permet de lancer le programme
  * 
  * @author Clément G., Paul C.
  *
@@ -28,7 +31,7 @@ public class EditeurMemento {
 	
 	
 	/**
-	 * Texte a saisir
+	 * Demande le texte à saisir et le retourne
 	 * 
 	 * @return StringBuffer
 	 */
@@ -41,7 +44,7 @@ public class EditeurMemento {
 	
 	
 	/**
-	 * numero du caractere de debut de sélection
+	 * Demande le numero du caractère de debut de sélection et le retourne
 	 * 
 	 * @return int
 	 */
@@ -65,7 +68,7 @@ public class EditeurMemento {
 	}
 	
 	/**
-	 * Nombre de caracteres à sélectionner
+	 * Demande le nombre de caractères à sélectionner et le retourne
 	 * 
 	 * @return
 	 */
@@ -88,8 +91,12 @@ public class EditeurMemento {
 		return sc.nextInt();
 	}
 	
-	
-	
+	/**
+	 * La fonction main de la version 2 <br>
+	 * Lance le programme
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args){
 		
 		// Initialisation

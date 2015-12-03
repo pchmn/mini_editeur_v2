@@ -31,9 +31,9 @@ public class SaisirEnregistrable extends Saisir implements CommandeEnregistrable
 	}
 	
 	/**
-	 * Récupère le texte saisi dans l'ihm
-	 * Crée le memento avec ce texte
-	 * Enregistre la commande
+	 * Récupère le texte saisi dans l'ihm <br>
+	 * Crée le memento avec ce texte <br>
+	 * Enregistre la commande <br>
 	 * Exécute la commande avec le texte récupéré
 	 */
 	@Override
@@ -53,7 +53,7 @@ public class SaisirEnregistrable extends Saisir implements CommandeEnregistrable
 	}
 	
 	/**
-	 * Exécute la commande lorsque la macro est rejouée
+	 * Exécute la commande lorsque la macro est rejouée 
 	 * en utilisant le texte enregistré dans le memento
 	 */
 	public void rejouerCommande() {	

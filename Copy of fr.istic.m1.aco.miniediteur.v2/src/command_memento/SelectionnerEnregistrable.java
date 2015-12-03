@@ -8,9 +8,9 @@ import memento.MementoSelection;
 import receiver.MoteurEditionInterface;
 
 /**
- * Version enregistrable de la commande S�lectionner
+ * Version enregistrable de la commande Sélectionner
  * 
- * @author Cl�ment G., Paul C.
+ * @author Clément G., Paul C.
  */
 public class SelectionnerEnregistrable extends Selectionner implements CommandeEnregistrable {
 	
@@ -30,9 +30,9 @@ public class SelectionnerEnregistrable extends Selectionner implements CommandeE
 	}
 	
 	/**
-	 * Récupére le début et la longueur de la sélection saisi dans l'ihm
-	 * Crée le memento avec ces paramètres
-	 * Enregistre la commande
+	 * Récupére le début et la longueur de la sélection saisi dans l'ihm <br>
+	 * Crée le memento avec ces paramètres <br>
+	 * Enregistre la commande <br>
 	 * Exécute la commande avec les paramétres récupérés
 	 */
 	@Override
@@ -53,8 +53,8 @@ public class SelectionnerEnregistrable extends Selectionner implements CommandeE
 	}
 
 	/**
-	 * Récupère la longueur du buffer avant de rejouer pour décaler la sélection
-	 * Exécute la commande avec les paramètres enregistrés dans le memento et le décalage
+	 * Récupère la longueur du buffer avant de rejouer pour décaler la sélection <br>
+	 * Exécute la commande avec les paramètres enregistrés dans le memento
 	 */
 	public void rejouerCommande() {
 		this.moteurEditionInterface.selectionner(this.getMemento().getDebut(), this.getMemento().getLongueur());
