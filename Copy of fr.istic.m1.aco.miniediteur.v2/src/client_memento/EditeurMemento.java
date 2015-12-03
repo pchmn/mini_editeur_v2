@@ -9,7 +9,7 @@ import memento.Enregistreur;
 import receiver.*;
 
 /**
- * Class EditeurMemento <br>
+ * Classe EditeurMemento <br>
  * C'est le main de la version 2 <br>
  * Elle permet de lancer le programme
  * 
@@ -109,7 +109,7 @@ public class EditeurMemento {
 		do {
 			
 			// Menu
-			System.out.println("Votre texte : " + moteur.getSelection());
+			System.out.println("\nVotre texte : " + moteur.getSelection());
 			ihm.menu();
 			
 			// En attente du choix
