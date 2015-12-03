@@ -70,7 +70,7 @@ public class EditeurMemento {
 	/**
 	 * Demande le nombre de caractères à sélectionner et le retourne
 	 * 
-	 * @return
+	 * @return int
 	 */
 	public int getLongueur(){
 		Scanner sc = new Scanner(System.in);
