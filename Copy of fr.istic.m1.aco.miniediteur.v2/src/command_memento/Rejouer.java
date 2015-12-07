@@ -1,5 +1,6 @@
 package command_memento;
 
+import command.Command;
 import memento.Enregistreur;
 
 /**
@@ -7,7 +8,7 @@ import memento.Enregistreur;
  * 
  * @author Clément G., Paul C.
  */
-public class Rejouer {
+public class Rejouer implements Command {
 	
 	private Enregistreur enregistreur;
 	

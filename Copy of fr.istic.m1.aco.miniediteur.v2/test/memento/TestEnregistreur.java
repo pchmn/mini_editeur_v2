@@ -8,7 +8,7 @@ import command_memento.CollerEnregistrable;
 import command_memento.CommandeEnregistrable;
 import command_memento.CopierEnregistrable;
 import command_memento.SaisirEnregistrable;
-import invoker_memento.IHMMemento;
+import invoker.IHMMemento;
 import junit.framework.TestCase;
 import receiver.Buffer;
 import receiver.MoteurEdition;

@@ -1,10 +1,10 @@
-package client_memento;
+package client;
 
 import java.util.Scanner;
 
 import command.*;
 import command_memento.*;
-import invoker_memento.IHMMemento;
+import invoker.IHMMemento;
 import memento.Enregistreur;
 import receiver.*;
 

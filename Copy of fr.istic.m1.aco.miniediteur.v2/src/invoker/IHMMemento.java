@@ -1,9 +1,8 @@
-package invoker_memento;
+package invoker;
 
-import client_memento.EditeurMemento;
+import client.EditeurMemento;
 import command.Command;
 import command_memento.CommandeEnregistrable;
-import invoker.IHMInterface;
 
 /**
  * Classe IHM pour la version 2
